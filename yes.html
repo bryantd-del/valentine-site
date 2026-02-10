@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>I Love You ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .heart {
+      font-size: 80px;
+      animation: beat 0.8s infinite;
+    }
+
+    .kiss {
+      font-size: 60px;
+      animation: kissMove 1.5s infinite;
+    }
+
+    @keyframes beat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes kissMove {
+      0% { transform: translateX(0); opacity: 1; }
+      100% { transform: translateX(150px); opacity: 0; }
+    }
+
+    #poem {
+      display: none;
+      max-width: 700px;
+      margin-top: 30px;
+      font-size: 20px;
+      line-height: 1.6;
+      background: rgba(0,0,0,0.3);
+      padding: 25px;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="animation">
+    <div class="heart">❤️</div>
+    <div class="kiss">😘💋</div>
+  </div>
+
+  <div id="poem">
+    Six years back, on a tiny bench your card fell into my hands. It didn't end up as a touch but a stare in the heart. You took off probably in excitement, I stood quietly in bewilderment. A smile was written all over my face and my heart was overly excited. I don't recall going the extra mile on this day but you set a precedence I just have to follow. I've looked into my heart a thousand times over, looking for a word to define love, to define as my peace, all I see is you, Ellen. Your smile, your touch, your everything, in and out sums up beauty. Beauty, which not only consumes sight but one that creates warmth, joy, excitement and love. You are the treasure that is worth more to die for than the third end of a rope. I've seen it and I've said it. Till forever falls apart, till the stars lose their luster, till time and life fades away, I will love you always babe❤️💖😘🥰
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("animation").style.display = "none";
+      document.getElementById("poem").style.display = "block";
+    }, 5000);
+  </script>
+
+</body>
+</html>
